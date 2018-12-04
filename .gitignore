@@ -207,3 +207,8 @@ fabric.properties
 # for Google Calendar api
 dist/token.json
 dist/client_secret.json
+
+
+# for this library test
+spec/token.json
+spec/client_secret.json
