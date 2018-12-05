@@ -1,4 +1,9 @@
 {
+  "name": "mini-promisify-googlecalendar",
+  "description": "googleapis の calendarに必要な部分のみを Promise でデコレートしたミニライブラリ",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "private": true,
   "scripts": {
     "babel:compile": "yarn babel src/js/**/*.js --out-dir lib --source-maps inline",
     "babel:watch": "yarn babel src/js/**/*.js --watch --out-dir lib --source-maps inline",
