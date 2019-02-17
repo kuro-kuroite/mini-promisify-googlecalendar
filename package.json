@@ -1,7 +1,7 @@
 {
-  "name": "mini-promisify-googlecalendar",
+  "name": "@kuro-kuroite/mini-promisify-googlecalendar",
   "description": "googleapis の calendarに必要な部分のみを Promise でデコレートしたミニライブラリ",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.1",
   "dependencies": {
     "bluebird": "^3.5.3",
     "googleapis": "^35.0.0"
