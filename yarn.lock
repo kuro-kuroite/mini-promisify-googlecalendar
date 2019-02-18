@@ -776,7 +776,7 @@
 
 "@kuro-kuroite/prelude@https://github.com/kuro-kuroite/prelude.git#feature/future":
   version "0.0.1-alpha.1"
-  resolved "https://github.com/kuro-kuroite/prelude.git#c9a23dfdb67a2ec9d2ad17c48dbe98c637552322"
+  resolved "https://github.com/kuro-kuroite/prelude.git#9054202ee9eb0b645389787a8c6fe6b93151c6ff"
   dependencies:
     bluebird "^3.5.3"
     date-fns "2.0.0-alpha.25"
