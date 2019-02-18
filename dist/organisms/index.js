@@ -3,13 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "OAuth2Client", {
+Object.defineProperty(exports, "withAuthorize", {
   enumerable: true,
   get: function get() {
-    return _oauth2_client.default;
+    return _with_authorize.default;
   }
 });
 
-var _oauth2_client = _interopRequireDefault(require("./OAuth/oauth2_client"));
+var _with_authorize = _interopRequireDefault(require("./google_calendar/with_authorize"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -1,6 +1,5 @@
-import { google } from '../../atoms/google_calendar';
-import fetchClientSecret from './fetch_client_secret';
-import listEvents from './list_events';
-import withAuthorize from './with_authorize';
+import OAuth2Client from './OAuth/oauth2_client';
 
-export { google, fetchClientSecret, listEvents, withAuthorize };
+// NOTE: to have the same export format as googleapis
+// eslint-disable-next-line import/prefer-default-export
+export { OAuth2Client };

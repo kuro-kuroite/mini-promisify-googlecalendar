@@ -3,6 +3,7 @@
   "description": "googleapis の calendarに必要な部分のみを Promise でデコレートしたミニライブラリ",
   "version": "0.0.1-alpha.1",
   "dependencies": {
+    "@kuro-kuroite/prelude": "https://github.com/kuro-kuroite/prelude.git#feature/future",
     "bluebird": "^3.5.3",
     "googleapis": "^35.0.0"
   },

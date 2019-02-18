@@ -6,26 +6,28 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "google", {
   enumerable: true,
   get: function get() {
-    return _google_calendar.google;
+    return _atoms.google;
   }
 });
-Object.defineProperty(exports, "fetchClientSecret", {
+Object.defineProperty(exports, "OAuth2Client", {
   enumerable: true,
   get: function get() {
-    return _google_calendar.fetchClientSecret;
-  }
-});
-Object.defineProperty(exports, "listEvents", {
-  enumerable: true,
-  get: function get() {
-    return _google_calendar.listEvents;
+    return _molecules.OAuth2Client;
   }
 });
 Object.defineProperty(exports, "withAuthorize", {
   enumerable: true,
   get: function get() {
-    return _google_calendar.withAuthorize;
+    return _organisms.withAuthorize;
   }
 });
 
-var _google_calendar = require("./organisms/google_calendar");
+var _prelude = require("@kuro-kuroite/prelude");
+
+var _atoms = require("./atoms");
+
+var _molecules = require("./molecules");
+
+var _organisms = require("./organisms");
+
+(0, _prelude.configEnv)();

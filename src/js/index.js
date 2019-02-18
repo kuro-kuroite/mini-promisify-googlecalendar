@@ -1,8 +1,8 @@
-import {
-  google,
-  fetchClientSecret,
-  listEvents,
-  withAuthorize,
-} from './organisms/google_calendar';
+import { configEnv } from '@kuro-kuroite/prelude';
+import { google } from './atoms';
+import { OAuth2Client } from './molecules';
+import { withAuthorize } from './organisms';
 
-export { google, fetchClientSecret, listEvents, withAuthorize };
+configEnv();
+
+export { google, OAuth2Client, withAuthorize };
