@@ -1,11 +1,5 @@
-// TODO: temp
-// import { fsAsync } from '@kuro-kuroite/prelude';
-
-import * as util from 'util';
-import fs from 'fs';
+import { fsAsync } from '@kuro-kuroite/prelude';
 import { OAuth2Client as _OAuth2Client } from '../../../atoms';
-
-const fsAsync = { readFile: util.promisify(fs.readFile) };
 
 export default class OAuth2Client {
   constructor(

@@ -1,11 +1,5 @@
-// TODO: temp
-// import { fsAsync } from '@kuro-kuroite/prelude';
+import { fsAsync } from '@kuro-kuroite/prelude';
 import { google } from '..';
-
-import * as util from 'util';
-import fs from 'fs';
-
-const fsAsync = { readFile: util.promisify(fs.readFile) };
 
 export default class OAuth2Client {
   constructor(clientSecretPath = process.env.CLIENT_SECRET_PATH) {

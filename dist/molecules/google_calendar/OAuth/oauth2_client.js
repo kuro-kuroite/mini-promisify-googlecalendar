@@ -5,15 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var util = _interopRequireWildcard(require("util"));
-
-var _fs = _interopRequireDefault(require("fs"));
+var _prelude = require("@kuro-kuroite/prelude");
 
 var _atoms = require("../../../atoms");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -24,10 +18,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var fsAsync = {
-  readFile: util.promisify(_fs.default.readFile)
-};
 
 var OAuth2Client =
 /*#__PURE__*/
@@ -103,7 +93,7 @@ function () {
               case 0:
                 tokenPath = _args2.length > 0 && _args2[0] !== undefined ? _args2[0] : this.tokenPath;
                 _context2.next = 3;
-                return fsAsync.readFile(tokenPath, 'utf-8');
+                return _prelude.fsAsync.readFile(tokenPath, 'utf-8');
 
               case 3:
                 token = _context2.sent;
