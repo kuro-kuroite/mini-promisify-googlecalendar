@@ -9,7 +9,7 @@ export default class OAuth2Client {
 
   async setCredentials(token) {
     await this.factoryOAuthClientAsync();
-    this.oAuth2Client.setCredentials = token;
+    this.oAuth2Client.credentials = token;
   }
 
   async factoryOAuthClientAsync(clientSecretPath = this.clientSecretPath) {

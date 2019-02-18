@@ -45,7 +45,7 @@ function () {
                 return this.factoryOAuthClientAsync();
 
               case 2:
-                this.oAuth2Client.setCredentials = token;
+                this.oAuth2Client.credentials = token;
 
               case 3:
               case "end":
